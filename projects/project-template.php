@@ -1,4 +1,11 @@
 <?php require_once '../sections/header.php'; ?>
+<link href=".././css/reset.css" rel="stylesheet">
+<link href=".././css/main.css" rel="stylesheet">
+
+
+
+
+
 
 <section class="portfolio-project-PROJECTNAME">
 <div class="proj-header">
@@ -20,7 +27,7 @@
 </div>
 
 <!-- parallax scroll -->
-<section class="portfolio-parallax-project1"></section>
+<section class="portfolio-parallax-project"></section>
 
 <div class="project-description">
     <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus imperdiet tristique porttitor. Vivamus congue consequat imperdiet. Nam lacinia consequat odio in suscipit. Integer fermentum dignissim turpis, sit amet porta tortor sollicitudin quis. Donec vel ultricies sem. Donec tincidunt dignissim lectus, non pulvinar orci semper id. Quisque in est sem.</p>
@@ -30,7 +37,7 @@
 
 <div class='project-views-container'>
 
-<section class="portfolio-closeup-PROJECTNAME">
+<section class="portfolio-closeup">
     <img src="../img/tidal_thumb.jpg" alt="">
     <img src="../img/tidal_thumb.jpg" alt="">
     <img src="../img/tidal_thumb.jpg" alt="">
@@ -49,7 +56,4 @@
 </section>
 
 
-<!-- fun footer stuff -->
-<?php include '../sections/footer.php'; ?>
-</body>
-</html>
+<?php require_once '.././sections/footer.php'; ?>

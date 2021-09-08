@@ -2,11 +2,11 @@
 <html lang="en">
 
   <head>
-    <meta charset="utf-8">
+    <meta charset="Unicode/UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
-    <meta name="description" content="Patricia Morales. An illustrator and graphic designer based in London, Ontario. Focused on digital illustrations, web design, UI/UX and branding.">
+    <meta name="description" content="Patricia Morales. An illustrator and graphic designer based in London, Ontario. Focused on digital illustrations, web design, UI/UX and branding." />
     <title>Patricia Morales :: Illustrator and Designer</title>
     <!-- fonts -->
     <style>
@@ -20,21 +20,3 @@
   </head>
 <body>
 <!-- fun header stuff -->
-
-<!-- navbar -->
-<header>
-<div class="logo-container">
-
-  <a href="#home"><img class="header-logo" src="./img/temp-logo.png" alt="Patricia Garcia" height="100" width="100"></a>
-
-</div>
-
-<nav class="header-nav">
-  <ul>
-    <li><a href="html/project-template.php">PORTFOLIO</a></li>
-    <li><a href="#home">About</a></li>
-    <li><a href="#home">Contact</a></li>
-  </ul>
-</nav>
-
-</header>

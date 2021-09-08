@@ -58,7 +58,7 @@
   opacity: 1;
 }
 
-.portfolio-parallax-project1 {
+.portfolio-parallax-project {
   /* The image used */
   background-image: url("https://images.pexels.com/photos/4622976/pexels-photo-4622976.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
   /* Set a specific height */
@@ -133,6 +133,26 @@
   display: block;
   width: 100%;
   padding: 3% 0 0 0;
+}
+
+@media (min-width: 601px) {
+  .project-info {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .project-description {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    background-color: bisque;
+  }
+  .portfolio-closeup {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 footer {
@@ -240,6 +260,11 @@ header {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
 body {
