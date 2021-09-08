@@ -1,29 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    
-    <meta name="description" content="">
-    <title>Patricia Morales :: Illustrator and Designer</title>
-    <!-- fonts -->
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:ital,wght@0,500;1,500&display=swap');
-    </style>
-    		<!-- Font Awesome API -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/main.css">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-  </head>
-<body>
-<!-- fun header stuff -->
-
-<?php include '../sections/header.php'; ?>
+<?php require_once '../sections/header.php'; ?>
 
 <section class="portfolio-project-PROJECTNAME">
 <div class="proj-header">
@@ -51,6 +26,8 @@
     <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus imperdiet tristique porttitor. Vivamus congue consequat imperdiet. Nam lacinia consequat odio in suscipit. Integer fermentum dignissim turpis, sit amet porta tortor sollicitudin quis. Donec vel ultricies sem. Donec tincidunt dignissim lectus, non pulvinar orci semper id. Quisque in est sem.</p>
 </div>
 
+
+
 <div class='project-views-container'>
 
 <section class="portfolio-closeup-PROJECTNAME">
@@ -65,7 +42,7 @@
 
 <div class="proj-links">
     <ul>
-        <li>link</li>
+        <li>AHHH</li>
     </ul>
 </div>
 <!-- portfolio proj ends -->
