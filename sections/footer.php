@@ -1,3 +1,5 @@
+
+
 <footer>
   <div class="footer-container">
 
@@ -14,3 +16,8 @@
      <span class="copyright">&copy; <?php echo date("Y"); ?> Patricia Morales.</span> 
   </div>
 </footer>
+
+<!--- end body --->
+</body>
+<script src="js/button.js"></script>
+</html>

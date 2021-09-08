@@ -21,7 +21,6 @@
 <body>
 <!-- fun header stuff -->
 
-
 <!-- navbar -->
 <header>
 <div class="logo-container">
