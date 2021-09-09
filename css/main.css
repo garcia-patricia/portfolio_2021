@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Raleway:wght@400;600&display=swap");
 .portfolio-projects {
   display: block;
   width: 100%;
@@ -340,16 +341,29 @@ body {
   transition: opacity 2s;
 }
 
-h1 {
-  font-family: 'Playfair Display', serif;
-}
-
 .row-no-padding > [class*="col-"] {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
 
-/** intro text **/
+h1 {
+  font-family: 'Playfair Display', serif;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .about-main {
   text-align: center;
   display: none;

@@ -32,11 +32,7 @@ if (mysqli_num_rows($result) > 0) {
   echo "No results";
 }
 mysqli_close($conn);
-?>
-
-<!-- end portfolio project loop -->
-
-
+?> <!-- end portfolio project loop -->
 
 <!-- portfolio grid ends -->
     </div>
