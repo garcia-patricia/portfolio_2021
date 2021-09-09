@@ -18,7 +18,9 @@
 <!-- fun header stuff -->
 
 <!-- header starts -->
-<header>
+<?php echo
+
+'<header>
 <!-- logo container begin -->
 <div class="logo-container">
   <a href="http://localhost:8888/portfolio_2021-main/"><img class="header-logo" src="./img/temp-logo.png" alt="Patricia Garcia" height="100" width="100"></a>
@@ -34,4 +36,6 @@
 <!-- navigation ends -->
 </nav>
 <!-- header ends -->
-</header>
+</header>';
+
+?>
