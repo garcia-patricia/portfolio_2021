@@ -18,9 +18,7 @@
 <!-- fun header stuff -->
 
 <!-- header starts -->
-<?php echo
-
-'<header>
+<header>
 <!-- logo container begin -->
 <div class="logo-container">
   <a href="http://localhost:8888/portfolio_2021-main/"><img class="header-logo" src="./img/temp-logo.png" alt="Patricia Garcia" height="100" width="100"></a>
@@ -36,6 +34,25 @@
 <!-- navigation ends -->
 </nav>
 <!-- header ends -->
-</header>';
+</header>
 
+<?php
+// Program to display URL of current page.
+  
+if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
+    $link = "https";
+else
+    $link = "http";
+  
+// Here append the common URL characters.
+$link .= "://";
+  
+// Append the host(domain name, ip) to the URL.
+$link .= $_SERVER['HTTP_HOST'];
+  
+// Append the requested resource location to the URL
+$link .= $_SERVER['REQUEST_URI'];
+      
+// Print the link
+//echo $link;
 ?>

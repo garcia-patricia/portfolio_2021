@@ -25,13 +25,49 @@
 <!-- logo container end -->  
 </div>
 <!-- navigation begins -->
+<?php
+// connect 
+$conn = mysqli_connect("localhost", "root", "root", "db_portfolio");
+// Check connection
+if($conn === false){
+    die("ERROR: Could not connect. " . mysqli_connect_error());
+}
+// Attempt select query execution
+$sql = "SELECT * FROM `tbl_projects`";
+$result = mysqli_query($conn, $sql);
+
+mysqli_close($conn);
+?>
+<!-- end portfolio project loop -->
+
 <nav class="header-nav">
   <ul>
-    <li><a href="http://localhost:8888/portfolio_2021-main/projects/project-template.php">PORTFOLIO</a></li>
-    <li><a href="#home">About</a></li>
-    <li><a href="#home">Contact</a></li>
+    <li><?php echo ' <a href=" ' . $link . ' ">Portfolio</a> ' ; ?></li>
+    <li><?php echo ' <a href=" ' . $link . ' ">About</a> ' ; ?></li>
+    <li><?php echo ' <a href=" ' . $link . $row['project_name'] . ' ">Contact</a> ' ; ?></li>
   </ul>
 <!-- navigation ends -->
 </nav>
 <!-- header ends -->
 </header>
+
+<?php
+// Program to display URL of current page.
+  
+if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
+    $link = "https";
+else
+    $link = "http";
+  
+// Here append the common URL characters.
+$link .= "://";
+  
+// Append the host(domain name, ip) to the URL.
+$link .= $_SERVER['HTTP_HOST'];
+  
+// Append the requested resource location to the URL
+$link .= $_SERVER['REQUEST_URI'];
+      
+// Print the link
+//echo $link;
+?>
