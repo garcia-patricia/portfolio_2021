@@ -19,8 +19,8 @@
 <div class='project-specifics'>
 
     <ul list='project-specs'>
-        <li>Role: Designer</li>
-        <li>Year: 2050!!</li>
+        <li><span class="bold">Role:</span> Designer</li>
+        <li><span class="bold">Year:</span> 2050!!</li>
         <li>UI/UX, Graphic Design</li>
     </ul>
     

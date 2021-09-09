@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Raleway:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@500;600&display=swap");
 .portfolio-projects {
   display: block;
   width: 100%;
@@ -336,7 +336,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   letter-spacing: .5px;
-  color: #333;
+  color: #101235;
   background-color: #f3f3f3;
   transition: opacity 2s;
 }
@@ -348,6 +348,10 @@ body {
 
 h1 {
   font-family: 'Playfair Display', serif;
+}
+
+.bold {
+  font-weight: 600;
 }
 
 .right {

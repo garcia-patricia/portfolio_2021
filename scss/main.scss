@@ -1,5 +1,6 @@
 // ------------------- import fonts
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Raleway:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@500;600&display=swap');
+
 
 //import all of my css variables
 @import '_vars.scss';
@@ -18,7 +19,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     letter-spacing: .5px;
-    color: #333;
+    color: $darkblue;
     background-color:rgb(243, 243, 243);
     transition: opacity 2s;
 }
@@ -27,12 +28,14 @@ body {
     padding-right: 0 !important;
 }
 
-// ------------------- headers 
+// ------------------- headers & font style
 
 h1 {
     font-family: 'Playfair Display', serif;
 }
-
+.bold {
+    font-weight: 600;
+}
 
 // ------------------- floats & clearfix
 
