@@ -6,6 +6,7 @@
 }
 
 .portfolio-grid {
+  display: grid;
   position: relative;
   overflow: hidden;
 }
@@ -58,6 +59,33 @@
   opacity: 1;
 }
 
+@media (min-width: 769px) {
+  .portfolio-projects {
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    column-gap: 10px;
+    row-gap: 5px;
+  }
+  .portfolio-grid img {
+    display: block;
+    width: 110%;
+    height: 100%;
+  }
+}
+
+.projtitle {
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+  line-height: 400px;
+  font-weight: 500;
+  letter-spacing: 1.12px;
+  font-family: 'Playfair Display';
+  text-shadow: 1px 1px 14px #000000;
+}
+
 .portfolio-parallax-project {
   /* The image used */
   background-image: url("https://images.pexels.com/photos/4622976/pexels-photo-4622976.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
@@ -85,13 +113,12 @@
 
 .project-info {
   display: block;
-  background-color: lightgreen;
-  padding: 4% 1% 1% 1%;
+  padding: 10% 1% 0 1%;
 }
 
 .project-specifics {
-  background-color: lightskyblue;
-  padding: 1%;
+  font-size: 10px;
+  padding: 10% 3%;
   text-align: center;
 }
 
@@ -125,39 +152,71 @@
 
 .project-views-container {
   display: block;
+  margin: 0 auto;
   width: 100%;
-  background-color: mediumblue;
+  overflow: hidden;
 }
 
 .portfolio-closeup-PROJECTNAME img {
   display: block;
   width: 100%;
+  margin: 0 auto;
   padding: 3% 0 0 0;
 }
 
-@media (min-width: 601px) {
+@media (min-width: 424px) {
   .project-info {
     display: block;
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
   }
   .project-description {
     display: block;
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
-    background-color: bisque;
   }
   .portfolio-closeup {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
     grid-template-columns: 1fr 1fr;
+  }
+  .portfolio-closeup img {
+    display: block;
+    width: 100%;
+  }
+  .portfolio-parallax-project {
+    min-height: 500px;
+  }
+  .proj-header {
+    min-height: 500px;
+  }
+  .projtitle {
+    line-height: 600px;
+  }
+  .project-info {
+    display: block;
+    padding: 5% 1% 0 1%;
+  }
+  .project-specifics {
+    font-size: 10px;
+    padding: 5% 3%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 769px) {
+  .project-description {
+    width: 55%;
   }
 }
 
 footer {
   background: #a1e6cd;
   padding: 7% 2%;
+  margin-top: 5%;
 }
 
 .footer-nav {
@@ -247,19 +306,24 @@ header {
   overflow: hidden;
 }
 
-.header-nav li {
-  float: left;
-}
-
 .header-nav li a {
   display: block;
-  font-size: 16px;
+  font-size: 10px;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #333;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
+
+@media (min-width: 424px) {
+  .header-nav li {
+    float: left;
+  }
+  .header-nav li a {
+    font-size: 16px;
+  }
 }
 
 html {

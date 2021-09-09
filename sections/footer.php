@@ -17,7 +17,3 @@
   </div>
 </footer>
 
-<!--- end body --->
-</body>
-<script src="js/button.js"></script>
-</html>

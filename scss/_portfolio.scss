@@ -5,6 +5,7 @@
     overflow: hidden;
 }
   .portfolio-grid {
+    display: grid;
     position: relative;
     overflow: hidden;
   }
@@ -33,7 +34,6 @@
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
-    
   }
   .thumb-project-title, a:link {
     text-decoration: none;
@@ -55,4 +55,29 @@
   .portfolio-grid:hover .middle {
     opacity: 1;
   }
+
+// --------------------- tablet
+
+@media (min-width: $tablet-width){
+    
+}
+
+// --------------------- desktop
+
+@media (min-width: $desktop-width){
+  .portfolio-projects {
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    column-gap: 10px;
+    row-gap: 5px;
+    }
+    
+    .portfolio-grid img {
+      display: block;
+      width: 110%;
+      height: 100%;
+    }
+}
   

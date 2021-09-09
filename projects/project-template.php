@@ -1,9 +1,5 @@
-<?php require_once '../sections/header.php'; ?>
-<link href=".././css/reset.css" rel="stylesheet">
-<link href=".././css/main.css" rel="stylesheet">
-
-
-
+<?php require_once '.././sections/header-project.php'; ?>
+<!-- navbar -->
 
 
 
@@ -13,18 +9,23 @@
 </div>
 
 <div class="project-info">
+
     <h3 class="project-name">Project name</h3>
     <h4 class="project-objective-title">Objective</h4>
-    <p class="project-objective">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus imperdiet tristique porttitor. Vivamus congue consequat imperdiet. Nam lacinia consequat odio in suscipit. Integer fermentum dignissim turpis, sit amet porta tortor sollicitudin quis. Donec vel ultricies sem. Donec tincidunt dignissim lectus, non pulvinar orci semper id. Quisque in est sem. In euismod, arcu varius vehicula porttitor, odio leo elementum neque, a tempor metus nisi vitae nulla. Suspendisse potenti. Sed venenatis dapibus blandit.</p>
+    <p class="project-objective">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus imperdiet tristique porttitor. Vivamus congue consequat imperdiet. Nam lacinia consequat odio in suscipit. Integer fermentum dignissim turpis, sit amet porta tortor sollicitudin quis. Donec vel ultricies sem. Donec tincidunt dignissim lectus, non pulvinar orci semper id. Quisque in est sem. In euismod, arcu varius vehicula porttitor, odio leo elementum neque, a tempor metus nisi vitae nulla. Suspendisse potenti. Sed venenatis dapibus blandit.</p>    
+
 </div>
 
 <div class='project-specifics'>
+
     <ul list='project-specs'>
         <li>Role: Designer</li>
         <li>Year: 2050!!</li>
         <li>UI/UX, Graphic Design</li>
     </ul>
+    
 </div>
+
 
 <!-- parallax scroll -->
 <section class="portfolio-parallax-project"></section>
@@ -57,3 +58,8 @@
 
 
 <?php require_once '.././sections/footer.php'; ?>
+
+<!--- end body --->
+</body>
+<script src="js/button.js"></script>
+</html>
