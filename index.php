@@ -18,59 +18,30 @@
 <!-- fun header stuff -->
 
 <!-- header starts -->
-<header>
-<!-- logo container begin -->
-<div class="logo-container">
-  <a href="http://localhost:8888/portfolio_2021-main/"><img class="header-logo" src="./img/temp-logo.png" alt="Patricia Garcia" height="100" width="100"></a>
-<!-- logo container end -->  
-</div>
-<!-- navigation begins -->
-<?php
-// connect 
-$conn = mysqli_connect("localhost", "root", "root", "db_portfolio");
-// Check connection
-if($conn === false){
-    die("ERROR: Could not connect. " . mysqli_connect_error());
-}
-// Attempt select query execution
-$sql = "SELECT * FROM `tbl_projects`";
-$result = mysqli_query($conn, $sql);
 
-mysqli_close($conn);
-?>
-<!-- end portfolio project loop -->
+<header class="header">
 
-<nav class="header-nav">
-  <ul>
-    <li><?php echo ' <a href=" ' . $link . ' ">Portfolio</a> ' ; ?></li>
-    <li><?php echo ' <a href=" ' . $link . ' ">About</a> ' ; ?></li>
-    <li><?php echo ' <a href=" ' . $link . $row['project_name'] . ' ">Contact</a> ' ; ?></li>
-  </ul>
-<!-- navigation ends -->
-</nav>
-<!-- header ends -->
-</header>
 
-<?php
-// Program to display URL of current page.
-  
-if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
-    $link = "https";
-else
-    $link = "http";
-  
-// Here append the common URL characters.
-$link .= "://";
-  
-// Append the host(domain name, ip) to the URL.
-$link .= $_SERVER['HTTP_HOST'];
-  
-// Append the requested resource location to the URL
-$link .= $_SERVER['REQUEST_URI'];
-      
-// Print the link
-//echo $link;
-?>
+    <div class="nav-wrapper">
+        <div class="logo-nav">
+          <a href="#top">
+            <img src="images/garcia_logo.svg" alt="Patricia Garcia :: Web Developer & Graphic Designer"></div>
+        </a>  
+
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="#top">Home</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </div>
+
+    
+  </header>
+
 
 
 <!-- header ends -->

@@ -84,12 +84,32 @@
  padding: 3% 0 0 0;
 }
 
+//bottom links
+.proj-links {
+    margin: 5% 0 0 0;
+}
+.proj-links ul {
+    text-align: center;
+    width: 95%;
+    margin: 0 auto;
+}
+.proj-links ul li {
+    display: inline-block;
+    list-style-type: none;
+    
+}
+.proj-links ul li a {
+    font-size: 11px;
+}
+.allProj {
+    padding-top: 7px;
+}
+
 @media (min-width: $tablet-width){
     .project-info {
         display: block;
         width: 100%;
-        margin: 0 auto;
-        
+        margin: 0 auto;     
     }
     .project-description {
         display: block;
@@ -126,6 +146,21 @@
         padding: 5% 3%;
         text-align: center;
     }
+    //bottom links
+.proj-links {
+    margin: 5% 0 0 0;
+    
+}
+.proj-links ul {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+.proj-links ul li {
+    font-size: 10px;
+    display: inline-block;
+    list-style-type: none;
+}
 }
 
 @media (min-width: $desktop-width){
