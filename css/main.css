@@ -1,11 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@500;600&display=swap");
-.logo-nav {
-  width: 80px;
-  margin: 0 auto;
-  padding-top: 10px;
-}
-
-/* tablet and laptops */
 /* ---header--- */
 header {
   background-color: rgba(255, 255, 255, 0.676);
@@ -15,6 +8,11 @@ header {
   width: 100%;
   z-index: 100;
   overflow: hidden;
+}
+
+.logo-nav {
+  width: 25%;
+  margin: 0 auto;
 }
 
 header ul {
@@ -31,7 +29,7 @@ header li a {
   font-weight: 400;
 }
 
-header .logo {
+header .logo-nav {
   display: block;
   text-decoration: none;
 }
@@ -58,22 +56,24 @@ header .menu {
 
 /* ---menu icon--- */
 header .menu-icon {
+  width: 30px;
   cursor: crosshair;
   display: inline-block;
   float: right;
+  border-radius: 10px;
   margin-right: 5%;
   position: relative;
   user-select: none;
-  padding: 5px;
-  bottom: 30px;
+  bottom: 40px;
 }
 
 header .menu-icon .navicon {
   background: #101235;
   display: block;
-  height: 2px;
+  height: 2.7px;
+  border-radius: 25px;
   position: relative;
-  width: 18px;
+  width: 100%;
 }
 
 header .menu-icon .navicon:before,
@@ -122,6 +122,9 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 }
 
 @media (min-width: 667px) {
+  header {
+    position: relative;
+  }
   .logo-nav {
     padding-top: 3.5rem;
   }
