@@ -24,13 +24,18 @@ header ul {
 	padding: 0;
 	list-style: none;
 	overflow: hidden;
+	font-size: .1em;
+	letter-spacing: 10px;
 }
 
 header li a {
+	font-family: 'Poppins', sans-serif;
 	color: $darkblue;
 	display: block;
 	text-decoration: none;
-	font-weight: 400;
+	text-transform: uppercase;
+	font-weight: 600;
+
 }
 
 header .logo-nav {
@@ -59,10 +64,9 @@ header .menu {
 }
 
 /* ---menu icon--- */
-
- .menu-icon {
+.menu-icon {
 width: 30px;
-cursor: crosshair;
+cursor: pointer;
 display: inline-block;
 float: right;
 border-radius: 10px;
@@ -127,7 +131,6 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 			bottom: 28px;
 		}
 }
-
 //////// --------------  *tablet and desktop */
 
 @media (min-width: 667px) {
@@ -135,8 +138,10 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 		position: relative; //stop the sticky!
 	}
 	.logo-nav {
-		padding-top: 3.5rem;
+		width: 150px;
+		padding: 1rem 0 1rem 1.2rem;
 	}
+	
 	.menu li a:hover{
 		color: darkblue;
 	}

@@ -1,7 +1,3 @@
-// ------------------- import fonts
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@500;600&display=swap');
-
-
 //import all of my css variables
 @import '_vars.scss';
 @import '_header.scss';
@@ -18,13 +14,14 @@ html {
     overflow-x: hidden;
   }
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1em;
 	line-height: 20px;
     letter-spacing: .5px;
     color: $darkblue;
+    font-weight: 300;
     //background-color: indigo; //check to see if css is workin tho
-    //background-color:rgb(243, 243, 243);
+    background-color:rgb(243, 243, 243);
     transition: opacity 2s;
 }
 .row-no-padding > [class*="col-"] {
@@ -43,7 +40,7 @@ h1 {
     font-family: 'Playfair Display', serif;
 }
 .bold {
-    font-weight: 600;
+    font-weight: 500;
 }
 
 // ------------------- floats & clearfix

@@ -8,7 +8,27 @@
     font-family: 'Playfair Display';
     text-shadow: 1px 1px 14px #000000;
 }
-
+.project-name {
+    font-size: 20px !important;
+    font-weight: 700;
+    color: $darkblue;
+    text-align: center;
+}
+.project-objective-title {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+.project-views-container
+{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+}
+.project-views-container img {
+    width: 100%;
+}
 .portfolio-parallax-project {
     /* The image used */
     background-image: url("https://images.pexels.com/photos/4622976/pexels-photo-4622976.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
@@ -42,9 +62,10 @@
       padding: 10% 1% 0 1%;
   }
   .project-specifics {
-      font-size: 10px;
+      font-size: 11px;
       padding: 10% 3%;
       text-align: center;
+      display: inline-block;
   }
   .project-specifics ul li {
       display: inline-block;
@@ -70,13 +91,7 @@
     font-size: 12px;
     line-height: 16px;
 }
-.project-views-container
-{
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    overflow: hidden;
-}
+
 .portfolio-closeup-PROJECTNAME img {
  display: block;
  width: 100%;
@@ -146,6 +161,7 @@
         padding: 5% 3%;
         text-align: center;
     }
+
     //bottom links
 .proj-links {
     margin: 5% 0 0 0;
@@ -154,7 +170,6 @@
 .proj-links ul {
     text-align: center;
     width: 90%;
-    background-color: grey;
     margin: 0 auto;
 }
 .proj-links ul li {
@@ -166,6 +181,13 @@
 
 @media (min-width: $desktop-width){
     .project-description {
-        width: 55%;
+        width: 60%;
+    }
+    .project-info {
+        width: 60%;
+        margin: 0 auto;
+    }
+    .project-specifics {
+        grid-column-start: 2;
     }
 }
