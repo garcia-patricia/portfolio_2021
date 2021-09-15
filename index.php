@@ -19,14 +19,14 @@
 
 <!-- header starts -->
 
-<header class="header">
+<header id="#top">
 
 
     <div class="nav-wrapper">
         <div class="logo-nav">
-          <a href="#top">
-            <img src="images/garcia_logo.svg" alt="Patricia Garcia :: Web Developer & Graphic Designer"></div>
-        </a>  
+            <img src="img/logo.svg" alt="Trisha Morales :: Front-end Web Developer, Graphic Designer &amp; Illustrator">
+        </div>
+         
 
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
