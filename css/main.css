@@ -55,7 +55,7 @@ header .menu {
 }
 
 /* ---menu icon--- */
-header .menu-icon {
+.menu-icon {
   width: 30px;
   cursor: crosshair;
   display: inline-block;
@@ -64,13 +64,13 @@ header .menu-icon {
   margin-right: 5%;
   position: relative;
   user-select: none;
-  bottom: 40px;
+  bottom: 38px;
 }
 
 header .menu-icon .navicon {
   background: #101235;
   display: block;
-  height: 2.7px;
+  height: 2px;
   border-radius: 25px;
   position: relative;
   width: 100%;
@@ -119,6 +119,18 @@ header .menu-btn:checked ~ .menu-icon .navicon:after {
 header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
 header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
+}
+
+@media (min-width: 320px) {
+  .menu-icon {
+    bottom: 22px;
+  }
+}
+
+@media (min-width: 424px) {
+  .menu-icon {
+    bottom: 28px;
+  }
 }
 
 @media (min-width: 667px) {
@@ -394,6 +406,7 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   .proj-links ul {
     text-align: center;
     width: 90%;
+    background-color: grey;
     margin: 0 auto;
   }
   .proj-links ul li {

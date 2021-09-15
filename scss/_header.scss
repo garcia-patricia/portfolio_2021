@@ -60,7 +60,7 @@ header .menu {
 
 /* ---menu icon--- */
 
-header .menu-icon {
+ .menu-icon {
 width: 30px;
 cursor: crosshair;
 display: inline-block;
@@ -69,13 +69,13 @@ border-radius: 10px;
 margin-right: 5%;
 position: relative;
 user-select: none;
-bottom: 40px;
+bottom: 38px;
 }
 
 header .menu-icon .navicon {
 	background: $darkblue;
 	display: block;
-	height: 2.7px;
+	height: 2px;
 	border-radius: 25px;
 	position: relative;
 	width: 100%;
@@ -115,8 +115,20 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
 header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
  	top: 0;
 }
+//menu icon for mobile, different sizes
+@media (min-width: 320px) {
+	.menu-icon {
+		bottom: 22px;
+	}
+	}
+	@media (min-width: 424px) {
+		.menu-icon {
+			bottom: 28px;
+		}
+}
 
 //////// --------------  *tablet and desktop */
+
 @media (min-width: 667px) {
 	header {
 		position: relative; //stop the sticky!
