@@ -1,0 +1,27 @@
+.intro {
+    margin: 0 auto;
+    margin: 2% 2% 10% 2%;
+    overflow: hidden;
+}
+.intro-content {
+    font-size: .8rem;
+}
+.intro-pic
+{
+    grid-row: 1;
+    width: 50%;
+    margin: 0 auto;
+}
+.intro-pic img {
+    width: 100%;
+    display: block;
+    border-radius: 50%;
+}
+.hello-title {
+    text-align: center;
+    display: block;
+    font-size: 25px;
+    color: $darkblue;
+    font-weight: 600;
+    padding: 5% 0;
+}

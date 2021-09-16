@@ -29,11 +29,18 @@
 .project-views-container img {
     width: 100%;
 }
+.proj-header {
+    background-image: url("https://images.pexels.com/photos/2343170/pexels-photo-2343170.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+    min-height: 200px;
+    display: block;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .portfolio-parallax-project {
-    /* The image used */
     background-image: url("https://images.pexels.com/photos/4622976/pexels-photo-4622976.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
-  
-    /* Set a specific height */
     min-height: 200px;
 
     /* Create the parallax scrolling effect */
@@ -42,21 +49,7 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
-.proj-header {
-    
-     /* The image used */
-     background-image: url("https://images.pexels.com/photos/2343170/pexels-photo-2343170.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
-  
-     /* Set a specific height */
-     min-height: 200px;
-     display: block;
- 
-     /* Create the parallax scrolling effect */
-     background-attachment: fixed;
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
-}
+
   .project-info {
       display: block;
       padding: 10% 1% 0 1%;
@@ -65,7 +58,7 @@
       font-size: 11px;
       padding: 10% 3%;
       text-align: center;
-      display: inline-block;
+      
   }
   .project-specifics ul li {
       display: inline-block;
@@ -180,6 +173,11 @@
 }
 
 @media (min-width: $desktop-width){
+    .project-specifics {
+        margin: 0 auto;
+        font-size: 12px;
+        padding: 5% 0;
+    }
     .project-description {
         width: 60%;
     }
@@ -187,7 +185,15 @@
         width: 60%;
         margin: 0 auto;
     }
-    .project-specifics {
-        grid-column-start: 2;
+    .proj-header {
+        // change to tablet/desktop image
+        background-image: url("https://images.pexels.com/photos/2343170/pexels-photo-2343170.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+        min-height: 200px;
+    }
+    
+    .portfolio-parallax-project {
+        // change to tablet/desktop image
+        background-image: url("https://images.pexels.com/photos/4622976/pexels-photo-4622976.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+        min-height: 200px;
     }
 }

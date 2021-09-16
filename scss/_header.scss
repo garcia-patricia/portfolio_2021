@@ -135,6 +135,7 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 
 @media (min-width: 667px) {
 	header {
+		background-color:transparent;
 		position: relative; //stop the sticky!
 	}
 	.logo-nav {

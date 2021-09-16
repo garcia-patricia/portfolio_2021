@@ -2,7 +2,7 @@
 
 <section class="portfolio-project-PROJECTNAME">
 <div class="proj-header">
-    <h2 class="projtitle">Title overlay</h2>
+    <h1 class="projtitle">Title overlay</h1>
 </div>
 
 <div class="project-info">
@@ -14,7 +14,6 @@
 </div>
 
 <div class='project-specifics'>
-
     <ul list='project-specs'>
         <li><span class="bold">Role:</span> Designer</li>
         <li><span class="bold">Year:</span> 2050!!</li>
