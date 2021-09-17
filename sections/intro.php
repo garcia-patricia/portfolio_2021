@@ -1,3 +1,6 @@
+
+
+
 <section class="intro">
     <div class="intro-content">
 <!-- intro content begins -->
@@ -6,7 +9,9 @@
     </div>
 
     <div class="intro-text">
-        <h1 class="hello-title">Hello worlddd</h1>
+        <h1 class="hello-title"><?php 
+        $items = Array( 'Howdy howdy howdy &#129312;','Cool. Cool cool cool.','Hello world. &#129302;','[[REDACTED]]','Stay a while and listen', 'Hey! Listen!', 'Good news, everyone!');
+        echo $items[array_rand($items)]; ?></h1>
         <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ligula metus, hendrerit quis nunc id, dignissim tempor lectus. Vivamus urna enim, posuere non tellus in, euismod semper tortor. Sed sagittis mauris ac arcu consectetur rhoncus. Sed sed eleifend risus, sed fermentum risus. Donec ultricies sem in eros mollis vulputate.
         </p>
