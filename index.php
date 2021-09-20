@@ -2,7 +2,9 @@
 
 <?php include 'sections/intro.php'; ?>
 
+
 <!-- edit content to match page -->
+
 <?php include 'sections/body.php'; ?>
 
 <!-- fun footer stuff -->
