@@ -23,7 +23,7 @@ $result = mysqli_query($conn, $sql);
 if (mysqli_num_rows($result) > 0) {
   // output data of each row
   while($row = mysqli_fetch_assoc($result)) {
-    echo "<div class='portfolio-grid'><a href='http://www.google.com/" .$row['project_thumbnail']. "'><img class='thumbnail-image' src='img/" . $row['project_thumbnail'] . " ' /> ";
+    echo "<div class='portfolio-grid'><a href='project-details.php?projects/" .$row['project_link']. "'><img class='thumbnail-image' src='img/" . $row['project_thumbnail'] . " ' /> ";
     echo "<div class='middle'><h1 class='thumb-project-title'> " .$row['project_name']. "</h1></a></div></div>";
     //this echos out the project info, making sure it works
     //echo "id: " . $row["id"]. " - Name: " . $row["project_thumbnail"]. "<br>";

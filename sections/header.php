@@ -34,7 +34,7 @@
         <ul class="menu">
             <li><a href="http://localhost:8888/portfolio_2021-main">Home</a></li>
             <li><a href="http://localhost:8888/portfolio_2021-main/project-template.php">Portfolio</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="about.php">About</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
   </nav>
@@ -43,3 +43,4 @@
     
 </header>
 <!-- header ends -->
+<body>

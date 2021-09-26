@@ -1,8 +1,10 @@
+
+
 <?php include 'sections/header.php'; ?>
 
 <section class="portfolio-project-PROJECTNAME">
 <div class="proj-header">
-    <h1 class="projtitle">Title overlay</h1>
+    <h1 class="projtitle"><?php echo $row['project_name'] ?></h1>
 </div>
 
 <div class="project-info">
